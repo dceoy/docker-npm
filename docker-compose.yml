@@ -1,0 +1,15 @@
+---
+version: '3'
+
+services:
+  npm:
+    container_name: npm
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: dceoy/npm:latest
+    volumes:
+      - ${PWD}:/wd
+    working_dir: /wd
+    entrypoint:
+      - /usr/bin/npm
