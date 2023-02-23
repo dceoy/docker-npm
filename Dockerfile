@@ -12,7 +12,7 @@ RUN set -eo pipefail \
       && curl -fsSL https://deb.nodesource.com/setup_current.x | bash - \
       && apt-get -y update \
       && apt-get -y dist-upgrade \
-      && apt-get -y install \
+      && apt-get -y install --no-install-recommends --no-install-suggests \
         node-latest-version \
       && apt-get -y autoremove \
       && apt-get clean \

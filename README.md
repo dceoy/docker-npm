@@ -1,7 +1,7 @@
 docker-npm
 ==========
 
-Dockerfile for npm
+Dockerfile for Node.js and npm
 
 [![CI to Docker Hub](https://github.com/dceoy/docker-npm/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/dceoy/docker-npm/actions/workflows/docker-publish.yml)
 
